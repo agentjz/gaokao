@@ -4,20 +4,18 @@ import { fileURLToPath } from "node:url";
 
 const moduleDir = dirname(fileURLToPath(import.meta.url));
 
-export const projectRoot = moduleDir.includes(`${join("dist", "src")}`)
-  ? resolve(moduleDir, "..", "..")
+export const projectRoot = moduleDir.includes(`${join("dist", "mbti", "src")}`)
+  ? resolve(moduleDir, "..", "..", "..", "mbti")
   : resolve(moduleDir, "..");
 
-export const stateDir = join(projectRoot, ".gaokao");
+export const dataDir = join(projectRoot, "data");
+export const questionsPath = join(dataDir, "questions.json");
+export const profilesPath = join(dataDir, "profiles.raw.json");
+export const stateDir = join(resolve(projectRoot, ".."), ".mbti");
 export const sessionsDir = join(stateDir, "sessions");
 export const reportsDir = join(stateDir, "reports");
-export const workspacesDir = join(stateDir, "workspaces");
-export const taskRoot = join(projectRoot, "tasks");
-export const validationRoot = join(projectRoot, "validation");
-export const configPath = join(projectRoot, "config.json");
 
 export function ensureState(): void {
   mkdirSync(sessionsDir, { recursive: true });
   mkdirSync(reportsDir, { recursive: true });
-  mkdirSync(workspacesDir, { recursive: true });
 }

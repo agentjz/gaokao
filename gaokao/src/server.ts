@@ -21,9 +21,9 @@ export function createGaokaoServer() {
 async function route(request: IncomingMessage, response: ServerResponse, shutdown: () => void): Promise<void> {
   const url = new URL(request.url ?? "/", "http://127.0.0.1");
   if (request.method === "GET" && url.pathname === "/") return sendHtml(response, homePage());
-  if (request.method === "POST" && url.pathname === "/api/exam/start") return sendJson(response, 200, startExam(await readJsonBody(request)));
-  if (request.method === "GET" && url.pathname === "/api/exam/status") return sendJson(response, 200, examStatus(required(url, "id")));
-  if (request.method === "POST" && url.pathname === "/api/exam/batch-answer") return sendJson(response, 200, await answerBatch(await readJsonBody(request)));
+  if (request.method === "POST" && url.pathname === "/api/gaokao/start") return sendJson(response, 200, startExam(await readJsonBody(request)));
+  if (request.method === "GET" && url.pathname === "/api/gaokao/status") return sendJson(response, 200, examStatus(required(url, "id")));
+  if (request.method === "POST" && url.pathname === "/api/gaokao/batch-answer") return sendJson(response, 200, await answerBatch(await readJsonBody(request)));
   if (request.method === "GET" && url.pathname === "/report") return sendHtml(response, reportPage(required(url, "id")));
   if (request.method === "POST" && url.pathname === "/api/server/shutdown") {
     sendJson(response, 200, { ok: true, message: "高考本地考务服务正在关闭" });

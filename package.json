@@ -1,10 +1,11 @@
 {
   "name": "gaokao",
   "version": "0.1.0",
-  "description": "Local web-based AI agent examination service.",
+  "description": "Gaokao and MBTI exams for AI agents.",
   "type": "module",
   "bin": {
-    "gaokao": "./dist/src/cli.js"
+    "gaokao": "./dist/gaokao/src/cli.js",
+    "mbti": "./dist/mbti/src/cli.js"
   },
   "scripts": {
     "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",

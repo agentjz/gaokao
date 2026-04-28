@@ -8,7 +8,7 @@ The owner is a product manager, not the person reviewing line-by-line implementa
 
 Gaokao is a fast-evolving, aggressive local examination system for evaluating real AI agent capability.
 
-The final user experience is: a user registers `gaokao.md` into any agent and asks it to read the Gaokao skill and take the exam. The agent finds the project, starts the local exam service, receives tasks, submits answers or required artifacts, obtains local report files, and shuts the service down after completion.
+The final user experience has two independent entry files. A user registers `gaokao.md` into an agent to run the capability exam, or registers `mbti.md` to run the Agent MBTI personality test. The agent finds the project, starts the relevant local service, completes the protocol, obtains local report files, and shuts the service down after completion.
 
 This is not a chat toy, a leaderboard wrapper, or a plugin for one specific agent. It must become a long-lived, extensible, multi-maintainer examination infrastructure that different agents can use.
 
@@ -87,9 +87,11 @@ The platform must not become the candidate's brain. It only provides the exam en
 
 The task bank must be a real exam asset, not packaging around fake tests.
 
-Public tasks live in `tasks/`. Machine-side validation lives in `validation/`. Scoring logic lives in `scoring/`. Report generation lives in the report layer. Do not put answers in public prompts. Do not hardcode question IDs and answers in scoring code.
+Gaokao public tasks live in `gaokao/tasks/`. Machine-side validation lives in `gaokao/validation/`. Scoring logic lives in `gaokao/scoring/`. Report generation lives in the report layer. Do not put answers in public prompts. Do not hardcode question IDs and answers in scoring code.
 
-Task directories are organized by validation mechanism, not by capability label. Capabilities such as execution, retrieval, reasoning, and communication are task metadata for reporting. The directory shape is `tasks/<validationType>/<number>/task.json`. Choice tasks use a shared choice answer key. Non-choice tasks use one validator per numbered task at `validation/<validationType>/<number>/validator.ts`.
+Task directories are organized by validation mechanism, not by capability label. Capabilities such as execution, retrieval, reasoning, and communication are task metadata for reporting. The directory shape is `gaokao/tasks/<validationType>/<number>/task.json`. Choice tasks use a shared choice answer key. Non-choice tasks use one validator per numbered task at `gaokao/validation/<validationType>/<number>/validator.ts`.
+
+MBTI is separate from Gaokao scoring. MBTI assets live in `mbti/`, produce personality reports under `.mbti/`, and must not affect Gaokao scores.
 
 When adding task types or task assets, make them data assets and formal contracts instead of prompt prose or temporary code.
 
@@ -103,10 +105,11 @@ Good structure is not about having many files. It is about clear responsibility,
 
 Core boundaries:
 
-- `tasks/`: public exam papers and public materials.
-- `validation/`: machine-side truth and validation data.
-- `scoring/`: general grading strategies.
-- `src/`: service, exam flow, state, reports, and access surfaces.
+- `gaokao/tasks/`: public capability exam papers and public materials.
+- `gaokao/validation/`: machine-side truth and validation data.
+- `gaokao/scoring/`: general capability grading strategies.
+- `gaokao/src/`: capability exam service, flow, state, reports, and access surfaces.
+- `mbti/`: independent Agent MBTI test assets, service, and reports.
 - `tests/`: product contracts and architecture boundaries.
 
 Do not leave empty directories, stale paths, obsolete formats, dead concepts, or residue that teaches future maintainers the wrong design.

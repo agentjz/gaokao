@@ -2,11 +2,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
-import { projectRoot, taskRoot, validationRoot } from "../src/paths.js";
-import { loadExamConfig } from "../src/config.js";
-import { loadQuestions } from "../src/taskbank.js";
-import { taskTypes } from "../src/types.js";
-import { loadChoiceAnswers } from "../validation/loadValidation.js";
+import { projectRoot, taskRoot, validationRoot } from "../gaokao/src/paths.js";
+import { loadExamConfig } from "../gaokao/src/config.js";
+import { loadQuestions } from "../gaokao/src/taskbank.js";
+import { taskTypes } from "../gaokao/src/types.js";
+import { loadChoiceAnswers } from "../gaokao/validation/loadValidation.js";
 
 test("public tasks do not contain private validation data or mojibake placeholders", () => {
   for (const path of walk(taskRoot, ".json")) {

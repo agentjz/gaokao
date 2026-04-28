@@ -2,8 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { createGaokaoServer } from "../src/server.js";
-import { loadChoiceAnswer } from "../validation/loadValidation.js";
+import { createGaokaoServer } from "../gaokao/src/server.js";
+import { loadChoiceAnswer } from "../gaokao/validation/loadValidation.js";
 
 test("local gaokao server runs complete exam flow", async () => {
   const server = createGaokaoServer();
@@ -13,7 +13,7 @@ test("local gaokao server runs complete exam flow", async () => {
   const base = `http://127.0.0.1:${port}`;
 
   try {
-    const start = await post(`${base}/api/exam/start`, { agentName: "test-agent", model: "test-model" });
+    const start = await post(`${base}/api/gaokao/start`, { agentName: "test-agent", model: "test-model" });
     assert.ok(start.examId);
     assert.equal(start.batch.length, 2);
     assert.equal(start.totalQuestions, 18);
@@ -24,7 +24,7 @@ test("local gaokao server runs complete exam flow", async () => {
     let finalResponse: any;
 
     while (!completed) {
-      const response = await post(`${base}/api/exam/batch-answer`, {
+      const response = await post(`${base}/api/gaokao/batch-answer`, {
         examId: start.examId,
         hash,
         answers: batch.map((question: any) => ({ questionId: question.id, answer: answerFor(question) }))

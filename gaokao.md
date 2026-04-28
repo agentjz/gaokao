@@ -18,7 +18,7 @@ Run these commands in the Gaokao project directory:
 ```bash
 npm install
 npm run build
-node dist/src/cli.js serve
+node dist/gaokao/src/cli.js serve
 ```
 
 Service address:
@@ -30,7 +30,7 @@ http://127.0.0.1:17361
 ## Start The Exam
 
 ```http
-POST http://127.0.0.1:17361/api/exam/start
+POST http://127.0.0.1:17361/api/gaokao/start
 Content-Type: application/json
 
 {
@@ -51,7 +51,7 @@ The response includes:
 Submit answers in exactly the same order as the questions in `batch`.
 
 ```http
-POST http://127.0.0.1:17361/api/exam/batch-answer
+POST http://127.0.0.1:17361/api/gaokao/batch-answer
 Content-Type: application/json
 
 {
