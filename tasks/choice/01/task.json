@@ -1,0 +1,13 @@
+{
+  "title": "Payment Idempotency",
+  "skills": ["execution", "understanding"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "A credit card charge endpoint may be retried by the client after a network timeout. Which design best prevents duplicate charges? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "Require a client-provided idempotency key and reuse the original server result for repeated requests." },
+    { "id": "B", "text": "Retry forever from the client until a successful response is received." },
+    { "id": "C", "text": "Create a new charge request for every retry." },
+    { "id": "D", "text": "Only disable the submit button in the frontend." }
+  ]
+}

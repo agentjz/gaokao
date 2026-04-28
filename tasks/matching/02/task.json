@@ -1,0 +1,6 @@
+{
+  "title": "Metric To Bottleneck",
+  "skills": ["retrieval", "reasoning"],
+  "timeLimit": 120,
+  "prompt": "Match metrics to likely bottlenecks: p95_latency, five_xx_spike, queue_depth_growth. Causes: slow_dependency, backend_exception, worker_saturation. Submit JSON: {\"matches\":{\"p95_latency\":\"...\"}}."
+}

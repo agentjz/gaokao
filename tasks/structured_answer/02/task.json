@@ -1,0 +1,6 @@
+{
+  "title": "Incident Triage Summary",
+  "skills": ["execution", "reflection"],
+  "timeLimit": 150,
+  "prompt": "A P1 checkout incident is caused by checkout_v2. The owner is checkout-oncall, and the immediate mitigation is disabling the flag. Submit JSON: {\"fields\":{\"severity\":\"...\",\"owner\":\"...\",\"mitigation\":\"...\"}}."
+}

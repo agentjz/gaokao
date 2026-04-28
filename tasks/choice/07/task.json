@@ -1,0 +1,13 @@
+{
+  "title": "Survivorship Bias",
+  "skills": ["reasoning"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "Returning aircraft show many bullet holes in the wings and few in the engines. Considering survivorship bias, what should be reinforced first? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "The engines, because aircraft hit there may not have returned." },
+    { "id": "B", "text": "Only the wings, because the visible holes are there." },
+    { "id": "C", "text": "Nothing, because returned aircraft survived." },
+    { "id": "D", "text": "The paint, because it is easiest to change." }
+  ]
+}

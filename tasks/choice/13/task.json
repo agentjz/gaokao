@@ -1,0 +1,13 @@
+{
+  "title": "Docker Build Strategy",
+  "skills": ["tooling", "execution"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "A Node.js application needs smaller images and faster builds. What is the best strategy? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "Use a multi-stage build, install production dependencies separately, and copy only runtime artifacts." },
+    { "id": "B", "text": "Install every development tool in the final runtime image." },
+    { "id": "C", "text": "Disable the package lock file." },
+    { "id": "D", "text": "Copy the entire repository including caches into the image." }
+  ]
+}

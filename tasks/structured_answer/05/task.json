@@ -1,0 +1,6 @@
+{
+  "title": "Migration Safety Plan",
+  "skills": ["tooling", "reflection"],
+  "timeLimit": 150,
+  "prompt": "A user table migration must be safe before production execution. Submit JSON: {\"fields\":{\"backup\":\"...\",\"dryRun\":\"...\",\"rollback\":\"...\"}} using concrete safety steps."
+}

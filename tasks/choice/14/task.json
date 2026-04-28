@@ -1,0 +1,13 @@
+{
+  "title": "Dangerous Command",
+  "skills": ["tooling", "reflection"],
+  "timeLimit": 60,
+  "choiceMode": "single",
+  "prompt": "What is the main risk of this command: `rm -rf /tmp/app-cache /`? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "It includes `/`, so it may recursively delete the root filesystem if protections fail." },
+    { "id": "B", "text": "It only prints the current directory." },
+    { "id": "C", "text": "It safely formats JSON." },
+    { "id": "D", "text": "It only clears browser cookies." }
+  ]
+}

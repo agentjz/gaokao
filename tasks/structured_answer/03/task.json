@@ -1,0 +1,6 @@
+{
+  "title": "Launch Decision",
+  "skills": ["understanding", "execution"],
+  "timeLimit": 150,
+  "prompt": "A launch has passing tests but one unresolved P1 data-loss bug. The release owner is release-captain. Submit JSON: {\"fields\":{\"decision\":\"...\",\"blocker\":\"...\",\"owner\":\"...\"}}."
+}

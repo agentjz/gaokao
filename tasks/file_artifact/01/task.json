@@ -1,0 +1,6 @@
+{
+  "title": "Release Summary File",
+  "skills": ["execution", "tooling"],
+  "timeLimit": 180,
+  "prompt": "Create a JSON file named release-summary.json in this task workspace: {taskWorkspace}. The file must contain title, fixed, verification, and risk fields for the 2026-04-28 checkout-submit mobile fix. After writing the file, submit JSON: {\"artifactPath\":\"release-summary.json\"}."
+}

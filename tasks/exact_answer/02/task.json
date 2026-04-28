@@ -1,0 +1,6 @@
+{
+  "title": "Feature Flag Rollback",
+  "skills": ["execution", "reasoning"],
+  "timeLimit": 120,
+  "prompt": "A checkout release causes a sudden spike in payment failures. The only changed runtime control is feature flag checkout_v2=true. What exact mitigation should be applied first? Submit JSON: {\"value\":\"...\"}."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Safe Deployment Order",
+  "skills": ["execution", "tooling"],
+  "timeLimit": 120,
+  "prompt": "Order these deployment actions safely: monitor, full_rollout, backup, deploy_canary. Submit JSON: {\"order\":[\"...\"]}."
+}

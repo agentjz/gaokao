@@ -1,0 +1,6 @@
+{
+  "title": "Expired Token Diagnosis",
+  "skills": ["retrieval", "reasoning"],
+  "timeLimit": 120,
+  "prompt": "Logs show a sharp HTTP 401 spike from the billing worker after service_token_expires_at=2026-04-28T09:00:00Z. The first failures begin at 09:01. What is the exact cause? Submit JSON: {\"value\":\"...\"}."
+}

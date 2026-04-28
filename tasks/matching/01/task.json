@@ -1,0 +1,6 @@
+{
+  "title": "Signal To Root Cause",
+  "skills": ["understanding", "retrieval"],
+  "timeLimit": 120,
+  "prompt": "Match each signal to the most likely root cause: E_CONN_POOL, HTTP_401_SPIKE, CACHE_MISS_SURGE. Root causes: database_pool_exhausted, auth_token_expired, cache_warmup_missing. Submit JSON: {\"matches\":{\"E_CONN_POOL\":\"...\"}}."
+}

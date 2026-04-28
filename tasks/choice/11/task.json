@@ -1,0 +1,13 @@
+{
+  "title": "Trace Localization",
+  "skills": ["retrieval", "reasoning"],
+  "timeLimit": 120,
+  "choiceMode": "single",
+  "prompt": "Logs show gateway returned 202, processor timed out while calling image-service, and image-service logged connection pool exhausted. Where is the request most likely stuck? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "Inside image-service waiting for an available connection from its pool." },
+    { "id": "B", "text": "At the gateway before request acceptance." },
+    { "id": "C", "text": "In the user's browser cache." },
+    { "id": "D", "text": "In a documentation generator." }
+  ]
+}

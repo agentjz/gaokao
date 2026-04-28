@@ -1,0 +1,6 @@
+{
+  "title": "Requirement Triage",
+  "skills": ["understanding", "reflection"],
+  "timeLimit": 150,
+  "prompt": "The owner asks to stop a production checkout outage. They also mention a future design refresh and a framework upgrade. Return the immediate goal, priority, and deferred work. Submit JSON: {\"fields\":{\"goal\":\"...\",\"priority\":\"...\",\"defer\":\"...\"}}."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Customer Escalation Response",
+  "skills": ["eq", "execution"],
+  "timeLimit": 150,
+  "prompt": "A customer reports repeated invoice failures and asks for a concrete next step. Submit JSON: {\"fields\":{\"acknowledge\":\"...\",\"action\":\"...\",\"followUp\":\"...\"}} using the required values."
+}

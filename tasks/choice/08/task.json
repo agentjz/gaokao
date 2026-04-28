@@ -1,0 +1,13 @@
+{
+  "title": "Incident Detection Gap",
+  "skills": ["reasoning", "execution"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "A service failed to start. Monitoring only checked the HTTP endpoint, and because the service never listened, the failure went undetected for 45 minutes. What is the most important improvement? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "Add startup and process-level health checks that detect failure before traffic is expected." },
+    { "id": "B", "text": "Increase the HTTP endpoint timeout." },
+    { "id": "C", "text": "Remove monitoring to avoid false alarms." },
+    { "id": "D", "text": "Only update the dashboard colors." }
+  ]
+}

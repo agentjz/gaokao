@@ -1,0 +1,6 @@
+{
+  "title": "Region Mismatch",
+  "skills": ["retrieval", "tooling"],
+  "timeLimit": 120,
+  "prompt": "api.env has REGION=us-west. worker.env has REGION=eu-central. Requests routed from the worker fail when calling regional inventory. What exact configuration problem caused the failure? Submit JSON: {\"value\":\"...\"}."
+}

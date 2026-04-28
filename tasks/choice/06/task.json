@@ -1,0 +1,13 @@
+{
+  "title": "Style Conflict",
+  "skills": ["memory", "tooling"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "The user first asked for snake_case, then later said to follow the existing code style. The surrounding code uses camelCase everywhere. What should a new variable use? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "camelCase, because the latest instruction points to existing project style." },
+    { "id": "B", "text": "snake_case, because the first instruction always wins." },
+    { "id": "C", "text": "A random mix of both styles." },
+    { "id": "D", "text": "A new style unrelated to the project." }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Feature Delivery Order",
+  "skills": ["understanding", "execution"],
+  "timeLimit": 120,
+  "prompt": "Order these feature delivery actions: implement, report, clarify_goal, verify, define_scope. Submit JSON: {\"order\":[\"...\"]}."
+}

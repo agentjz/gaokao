@@ -1,0 +1,13 @@
+{
+  "title": "Config Reading",
+  "skills": ["retrieval", "tooling"],
+  "timeLimit": 60,
+  "choiceMode": "multiple",
+  "prompt": "Config: APP_ENV=staging, REGION=us-west, DEBUG=false. Which reads are correct? Submit JSON: {\"optionIds\":[\"A\",\"B\"]}.",
+  "options": [
+    { "id": "A", "text": "REGION is us-west." },
+    { "id": "B", "text": "DEBUG is false." },
+    { "id": "C", "text": "APP_ENV is production." },
+    { "id": "D", "text": "REGION is eu-central." }
+  ]
+}

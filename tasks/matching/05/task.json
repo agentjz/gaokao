@@ -1,0 +1,6 @@
+{
+  "title": "Stakeholder Need",
+  "skills": ["eq", "understanding"],
+  "timeLimit": 120,
+  "prompt": "Match stakeholder statements to needs: customer_says_unstable, engineer_says_no_tests, manager_says_deadline. Needs: reliability, verification, schedule_risk. Submit JSON: {\"matches\":{\"customer_says_unstable\":\"...\"}}."
+}

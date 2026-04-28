@@ -1,0 +1,13 @@
+{
+  "title": "Release Gate",
+  "skills": ["execution", "reflection"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "A release has passing tests, rollback prepared, and docs updated, but one open P1 bug remains. What should happen? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "Block the release until the P1 bug is resolved or formally waived by the release owner." },
+    { "id": "B", "text": "Release immediately because the rollback plan exists." },
+    { "id": "C", "text": "Release quietly and fix the P1 bug later." },
+    { "id": "D", "text": "Hide the P1 bug from the release notes." }
+  ]
+}

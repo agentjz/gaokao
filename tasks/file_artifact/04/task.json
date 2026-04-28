@@ -1,0 +1,6 @@
+{
+  "title": "Migration Plan Artifact",
+  "skills": ["tooling", "reflection"],
+  "timeLimit": 180,
+  "prompt": "Create a JSON file named migration-plan.json in this task workspace: {taskWorkspace}. The file must contain table, backup, dryRun, and rollback fields for a safe users table migration. After writing the file, submit JSON: {\"artifactPath\":\"migration-plan.json\"}."
+}

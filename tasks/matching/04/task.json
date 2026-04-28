@@ -1,0 +1,6 @@
+{
+  "title": "Project File Purpose",
+  "skills": ["tooling", "retrieval"],
+  "timeLimit": 120,
+  "prompt": "Match project files to purposes: package.json, Dockerfile, tsconfig.json. Purposes: node_metadata, container_build, typescript_config. Submit JSON: {\"matches\":{\"package.json\":\"...\"}}."
+}

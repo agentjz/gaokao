@@ -1,0 +1,6 @@
+{
+  "title": "Connection Pool Root Cause",
+  "skills": ["retrieval", "reasoning"],
+  "timeLimit": 120,
+  "prompt": "Log excerpt: gateway.log at 09:42:11 has request_id=req-7781 status=502 upstream=payment-core error=E_CONN_POOL_EXHAUSTED. payment-core.log for the same request has pool_size=20 active=20 waiting=47. What is the root cause? Submit JSON: {\"value\":\"...\"}."
+}

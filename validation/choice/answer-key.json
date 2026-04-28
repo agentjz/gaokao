@@ -1,0 +1,20 @@
+{
+  "answers": [
+    { "questionId": "choice-01", "optionIds": ["A"] },
+    { "questionId": "choice-02", "optionIds": ["A"] },
+    { "questionId": "choice-03", "optionIds": ["A", "B"] },
+    { "questionId": "choice-04", "optionIds": ["A"] },
+    { "questionId": "choice-05", "optionIds": ["A", "B", "C"] },
+    { "questionId": "choice-06", "optionIds": ["A"] },
+    { "questionId": "choice-07", "optionIds": ["A"] },
+    { "questionId": "choice-08", "optionIds": ["A"] },
+    { "questionId": "choice-09", "optionIds": ["A"] },
+    { "questionId": "choice-10", "optionIds": ["A"] },
+    { "questionId": "choice-11", "optionIds": ["A"] },
+    { "questionId": "choice-12", "optionIds": ["A", "B"] },
+    { "questionId": "choice-13", "optionIds": ["A"] },
+    { "questionId": "choice-14", "optionIds": ["A"] },
+    { "questionId": "choice-15", "optionIds": ["A", "B", "D", "E"] },
+    { "questionId": "choice-16", "optionIds": ["A"] }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Sprint Boundary",
+  "skills": ["understanding", "execution"],
+  "timeLimit": 120,
+  "choiceMode": "multiple",
+  "prompt": "The sprint goal is to implement an email password reset flow. Which added items are outside the current sprint goal? Submit JSON: {\"optionIds\":[\"A\",\"B\",\"D\",\"E\"]}.",
+  "options": [
+    { "id": "A", "text": "Rebuild the whole account settings page." },
+    { "id": "B", "text": "Add social login." },
+    { "id": "C", "text": "Send a reset email with a safe token." },
+    { "id": "D", "text": "Redesign the pricing page." },
+    { "id": "E", "text": "Migrate the entire frontend framework." }
+  ]
+}

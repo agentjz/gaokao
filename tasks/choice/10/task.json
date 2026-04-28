@@ -1,0 +1,13 @@
+{
+  "title": "Short Link Risk",
+  "skills": ["reflection", "reasoning"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "A short-link system uses auto-increment IDs, one database, one machine, and cache. What is the highest-risk assumption? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "The single database and single machine can handle availability and scale requirements." },
+    { "id": "B", "text": "The UI color will satisfy every user." },
+    { "id": "C", "text": "The team will never need logs." },
+    { "id": "D", "text": "Short links should never expire." }
+  ]
+}

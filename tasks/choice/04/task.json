@@ -1,0 +1,13 @@
+{
+  "title": "Blameless Review",
+  "skills": ["eq", "reflection"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "During an incident review, a senior engineer starts blaming a junior engineer. Where should the facilitator redirect the discussion? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "To system conditions, missing safeguards, and concrete prevention work." },
+    { "id": "B", "text": "To deciding who should be punished first." },
+    { "id": "C", "text": "To avoiding the review because it is uncomfortable." },
+    { "id": "D", "text": "To proving that no process changes are needed." }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Runbook Update Artifact",
+  "skills": ["retrieval", "execution"],
+  "timeLimit": 180,
+  "prompt": "Create a JSON file named runbook-update.json in this task workspace: {taskWorkspace}. The file must contain title, trigger, mitigation, and verification fields for an exhausted connection pool runbook. After writing the file, submit JSON: {\"artifactPath\":\"runbook-update.json\"}."
+}

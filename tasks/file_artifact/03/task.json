@@ -1,0 +1,6 @@
+{
+  "title": "API Health Artifact",
+  "skills": ["tooling", "execution"],
+  "timeLimit": 180,
+  "prompt": "Create a JSON file named api-health.json in this task workspace: {taskWorkspace}. The file must contain endpoint, status, p95Ms, and checkedAt for the payments API health check. After writing the file, submit JSON: {\"artifactPath\":\"api-health.json\"}."
+}

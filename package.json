@@ -1,0 +1,22 @@
+{
+  "name": "gaokao",
+  "version": "0.1.0",
+  "description": "Local web-based AI agent examination service.",
+  "type": "module",
+  "bin": {
+    "gaokao": "./dist/src/cli.js"
+  },
+  "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "test": "node --test dist/tests/*.test.js",
+    "check": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}

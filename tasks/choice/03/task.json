@@ -1,0 +1,13 @@
+{
+  "title": "Active Listening",
+  "skills": ["eq", "understanding"],
+  "timeLimit": 120,
+  "choiceMode": "multiple",
+  "prompt": "A product manager says customers need stability, not new features, and also says they feel interrupted and exhausted in meetings. Which points should be acknowledged first? Submit JSON: {\"optionIds\":[\"A\",\"B\"]}.",
+  "options": [
+    { "id": "A", "text": "They feel frustrated and not fully heard." },
+    { "id": "B", "text": "The core product need is stability over new features." },
+    { "id": "C", "text": "The product manager should be contradicted immediately." },
+    { "id": "D", "text": "The emotion should be ignored so scheduling can continue." }
+  ]
+}

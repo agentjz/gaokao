@@ -1,0 +1,13 @@
+{
+  "title": "Project Memory",
+  "skills": ["memory", "retrieval"],
+  "timeLimit": 120,
+  "choiceMode": "multiple",
+  "prompt": "Project notes say: Alpha is now blocked by Stripe sandbox; Beta design is approved and ready for development; Gamma is already live but still needs a monitoring dashboard. Which statements are correct? Submit JSON: {\"optionIds\":[\"A\",\"B\",\"C\"]}.",
+  "options": [
+    { "id": "A", "text": "Alpha is blocked by Stripe sandbox." },
+    { "id": "B", "text": "Beta can move into development." },
+    { "id": "C", "text": "Gamma is live but still needs monitoring work." },
+    { "id": "D", "text": "Beta is blocked by Stripe sandbox." }
+  ]
+}

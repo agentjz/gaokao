@@ -1,0 +1,6 @@
+{
+  "title": "Debugging Sequence",
+  "skills": ["reasoning", "tooling"],
+  "timeLimit": 120,
+  "prompt": "Order these debugging actions: patch, reproduce, inspect_logs, verify, isolate_change. Submit JSON: {\"order\":[\"...\"]}."
+}

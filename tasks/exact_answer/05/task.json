@@ -1,0 +1,6 @@
+{
+  "title": "Queue Backlog Bottleneck",
+  "skills": ["retrieval", "reasoning"],
+  "timeLimit": 120,
+  "prompt": "Metrics show queue_depth rising from 20 to 800, workers_busy=100%, and database CPU at 35%. What exact bottleneck is indicated? Submit JSON: {\"value\":\"...\"}."
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Data Incident Response",
+  "skills": ["reflection", "execution"],
+  "timeLimit": 120,
+  "prompt": "Order these data incident actions: notify_owner, review, contain, remediate, preserve_evidence. Submit JSON: {\"order\":[\"...\"]}."
+}

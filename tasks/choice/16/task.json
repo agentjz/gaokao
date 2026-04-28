@@ -1,0 +1,13 @@
+{
+  "title": "Priority Under Incident",
+  "skills": ["understanding", "execution"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "The user's main goal is to fix production payment failures. Side topics include rewriting UI, upgrading the framework, and changing colors. What is the priority? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "Diagnose and fix the production payment failure first." },
+    { "id": "B", "text": "Start with the color changes." },
+    { "id": "C", "text": "Rewrite the UI before looking at payments." },
+    { "id": "D", "text": "Upgrade the framework before triage." }
+  ]
+}

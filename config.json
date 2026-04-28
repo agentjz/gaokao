@@ -1,0 +1,12 @@
+{
+  "exam": {
+    "questionsPerType": {
+      "choice": 3,
+      "exact_answer": 3,
+      "structured_answer": 3,
+      "ordering": 3,
+      "matching": 3,
+      "file_artifact": 3
+    }
+  }
+}

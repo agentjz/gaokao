@@ -1,0 +1,13 @@
+{
+  "title": "Postmortem Focus",
+  "skills": ["reflection", "reasoning"],
+  "timeLimit": 90,
+  "choiceMode": "single",
+  "prompt": "An incident was triggered by one incorrect config change, but the system had no validation, no canary, and no startup probe. What should the postmortem focus on? Submit JSON: {\"optionIds\":[\"A\"]}.",
+  "options": [
+    { "id": "A", "text": "The missing system safeguards that allowed one mistake to become an outage." },
+    { "id": "B", "text": "Only naming the person who made the change." },
+    { "id": "C", "text": "Avoiding any technical follow-up." },
+    { "id": "D", "text": "Deleting the incident record." }
+  ]
+}

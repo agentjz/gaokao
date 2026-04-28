@@ -1,0 +1,6 @@
+{
+  "title": "Incident Response Order",
+  "skills": ["reasoning", "execution"],
+  "timeLimit": 120,
+  "prompt": "Order these incident response actions from first to last: detect, mitigate, verify, postmortem. Submit JSON: {\"order\":[\"...\"]}."
+}

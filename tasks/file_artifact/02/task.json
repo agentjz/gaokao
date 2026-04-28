@@ -1,0 +1,6 @@
+{
+  "title": "Incident Triage Artifact",
+  "skills": ["execution", "reflection"],
+  "timeLimit": 180,
+  "prompt": "Create a JSON file named incident-triage.json in this task workspace: {taskWorkspace}. The file must contain severity, owner, action, and verification fields for a checkout_v2 P1 incident. After writing the file, submit JSON: {\"artifactPath\":\"incident-triage.json\"}."
+}

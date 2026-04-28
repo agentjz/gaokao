@@ -1,0 +1,6 @@
+{
+  "title": "HTTP Failure Cause",
+  "skills": ["retrieval", "reasoning"],
+  "timeLimit": 120,
+  "prompt": "Match signals to root causes: login_401, checkout_409, upload_413. Causes: expired_token, duplicate_idempotency_key, payload_too_large. Submit JSON: {\"matches\":{\"login_401\":\"...\"}}."
+}
